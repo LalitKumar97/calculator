@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Calculator in  java</title>
+    
+</head>
+<body>
+    <div class="cal">
+    <div class="title"> <p>Calculator</p></div>
+    <div class="calculator">
+        <input type="text" class="display" id="screen" disabled>
+        <div class="keys">
+            <div class="row">
+                <button  value="AC" onclick="display('Ac')">AC</button>
+                <button value="DEl" onclick="del('')">Del</button>
+                <button value="." onclick="display('.')">.</button>
+                <button  class="arthopertor" value="%" onclick="display('%')">%</button>
+            </div>
+            <div class="row">
+                <button value="7" onclick="display('7')">7</button>
+                <button value="8" onclick="display('8')">8</button>
+                <button value="9" onclick="display('9')">9</button>
+                <button  class="arthopertor" value="+" onclick="display('+')">+</button>
+            </div>
+            <div class="row">
+                <button value="4"onclick="display('4')">4</button>
+                <button value="5"onclick="display('5')">5</button>
+                <button value="6"onclick="display('6')">6</button>
+                <button class="arthopertor" value="-" onclick="display('-')">-</button>
+            </div>
+            <div class="row">
+                <button value="1"onclick="display('1')">1</button>
+                <button value="2"onclick="display('2')">2</button>
+                <button value=""onclick="display('3')">3</button>
+                <button class="arthopertor" value="*" onclick="display('*')">*</button>
+            </div>
+            <div class="row">
+                <button class="arthopertor" value="C" onclick="clr()">C</button>
+                <button value="0"onclick="display('0')">0</button>
+                <button class="arthopertor" value="/" onclick="display('/')">/</button>
+                <button class="equal" value="=" onclick="solve()">=</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
